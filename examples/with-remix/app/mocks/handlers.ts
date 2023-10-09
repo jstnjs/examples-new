@@ -1,7 +1,7 @@
-import { rest, graphql, HttpResponse } from 'msw'
+import { http, graphql, HttpResponse } from 'msw'
 
 export const handlers = [
-  rest.get('https://api.example.com/user', () => {
+  http.get('https://api.example.com/user', () => {
     return HttpResponse.json({
       firstName: 'John',
       lastName: 'Maverick',
