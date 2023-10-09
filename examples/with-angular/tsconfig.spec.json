@@ -5,7 +5,7 @@
     "outDir": "./build/spec",
     "esModuleInterop": true,
     "module": "CommonJs",
-    "types": ["jest"]
+    "types": ["jest", "@types/testing-library__jest-dom"]
   },
   "include": ["src/**/*.spec.ts", "src/**/*.d.ts"]
 }
